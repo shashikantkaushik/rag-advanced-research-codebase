@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{nDCG@10 with MiniLM-L6 embeddings}
+\label{tab:ndcg_MiniLM-L6}
+\begin{tabular}{lcccccc}
+\toprule
+ & scifact & nfcorpus & arguana & fiqa & Avg & Latency (ms) \\
+\midrule
+Dense & 0.645 & 0.316 & 0.505 & 0.369 & 0.459 & 13.0 \\
+Hybrid & \textbf{0.714} & 0.348 & \textbf{0.534} & 0.393 & 0.497 & 14.1 \\
+Rerank & 0.691 & 0.353 & 0.516 & 0.383 & 0.486 & 98.5 \\
+\midrule
+Rule router & 0.684 & 0.353 & 0.534 & \textbf{0.395} & 0.492 & 54.5 \\
+Learned router & 0.711 & \textbf{0.358} & 0.529 & 0.392 & \textbf{0.498} & 44.6 \\
+Oracle & 0.775 & 0.392 & 0.681 & 0.475 & 0.581 & 31.3 \\
+\bottomrule
+\end{tabular}
+\end{table}

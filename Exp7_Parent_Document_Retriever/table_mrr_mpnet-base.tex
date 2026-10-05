@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{MRR@10 with mpnet-base embeddings}
+\label{tab:mrr_mpnet-base}
+\begin{tabular}{lcccccc}
+\toprule
+ & scifact & nfcorpus & arguana & fiqa & Avg & Latency (ms) \\
+\midrule
+Dense & 0.602 & 0.524 & 0.389 & \textbf{0.578} & 0.524 & 27.4 \\
+Hybrid & \textbf{0.687} & 0.577 & \textbf{0.443} & 0.566 & 0.568 & 28.8 \\
+Rerank & 0.656 & 0.585 & 0.416 & 0.480 & 0.534 & 129.3 \\
+\midrule
+Rule router & 0.659 & 0.585 & 0.443 & 0.522 & 0.552 & 77.8 \\
+Learned router & 0.677 & \textbf{0.592} & 0.437 & 0.572 & \textbf{0.570} & 56.5 \\
+Oracle & 0.752 & 0.653 & 0.617 & 0.676 & 0.675 & 47.3 \\
+\bottomrule
+\end{tabular}
+\end{table}

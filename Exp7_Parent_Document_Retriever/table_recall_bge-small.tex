@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Recall@10 with bge-small embeddings}
+\label{tab:recall_bge-small}
+\begin{tabular}{lcccccc}
+\toprule
+ & scifact & nfcorpus & arguana & fiqa & Avg & Latency (ms) \\
+\midrule
+Dense & 0.828 & 0.163 & 0.862 & \textbf{0.449} & 0.575 & 22.6 \\
+Hybrid & \textbf{0.860} & 0.170 & \textbf{0.870} & 0.446 & \textbf{0.586} & 23.9 \\
+Rerank & 0.818 & \textbf{0.171} & 0.826 & 0.436 & 0.563 & 120.8 \\
+\midrule
+Rule router & 0.831 & 0.171 & 0.870 & 0.447 & 0.580 & 72.8 \\
+Learned router & 0.850 & 0.168 & 0.865 & 0.441 & 0.581 & 44.3 \\
+Oracle & 0.898 & 0.187 & 0.940 & 0.513 & 0.635 & 38.4 \\
+\bottomrule
+\end{tabular}
+\end{table}

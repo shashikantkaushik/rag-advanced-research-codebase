@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Recall@10 with MiniLM-L6 embeddings}
+\label{tab:recall_MiniLM-L6}
+\begin{tabular}{lcccccc}
+\toprule
+ & scifact & nfcorpus & arguana & fiqa & Avg & Latency (ms) \\
+\midrule
+Dense & 0.783 & 0.155 & 0.806 & 0.441 & 0.546 & 13.0 \\
+Hybrid & \textbf{0.840} & 0.173 & \textbf{0.835} & 0.465 & \textbf{0.578} & 14.1 \\
+Rerank & 0.826 & 0.167 & 0.828 & 0.460 & 0.570 & 98.5 \\
+\midrule
+Rule router & 0.820 & 0.168 & 0.835 & \textbf{0.471} & 0.573 & 54.5 \\
+Learned router & 0.836 & \textbf{0.174} & 0.823 & 0.464 & 0.574 & 44.6 \\
+Oracle & 0.879 & 0.188 & 0.922 & 0.532 & 0.630 & 31.3 \\
+\bottomrule
+\end{tabular}
+\end{table}

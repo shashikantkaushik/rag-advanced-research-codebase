@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{nDCG@10 with bge-small embeddings}
+\label{tab:ndcg_bge-small}
+\begin{tabular}{lcccccc}
+\toprule
+ & scifact & nfcorpus & arguana & fiqa & Avg & Latency (ms) \\
+\midrule
+Dense & 0.701 & 0.343 & \textbf{0.607} & \textbf{0.391} & 0.510 & 22.6 \\
+Hybrid & \textbf{0.728} & \textbf{0.360} & 0.599 & 0.371 & 0.515 & 23.9 \\
+Rerank & 0.690 & 0.359 & 0.511 & 0.369 & 0.482 & 120.8 \\
+\midrule
+Rule router & 0.698 & 0.359 & 0.599 & 0.378 & 0.509 & 72.8 \\
+Learned router & 0.724 & 0.352 & 0.604 & 0.388 & \textbf{0.517} & 44.3 \\
+Oracle & 0.790 & 0.402 & 0.721 & 0.465 & 0.594 & 38.4 \\
+\bottomrule
+\end{tabular}
+\end{table}

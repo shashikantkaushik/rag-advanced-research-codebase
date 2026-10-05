@@ -1,0 +1,89 @@
+{
+  "summary_table": {
+    "Always dense": {
+      "recall@1": 0.7222222222222222,
+      "recall@3": 0.8555555555555555,
+      "recall@5": 0.9277777777777778,
+      "mrr": 0.8012037037037035,
+      "avg_cost": 1.0
+    },
+    "Always hybrid": {
+      "recall@1": 0.7611111111111111,
+      "recall@3": 0.9111111111111111,
+      "recall@5": 0.9333333333333333,
+      "mrr": 0.830648148148148,
+      "avg_cost": 1.0999999999999996
+    },
+    "Always hybrid_rerank": {
+      "recall@1": 0.7166666666666667,
+      "recall@3": 0.8722222222222222,
+      "recall@5": 0.9222222222222223,
+      "mrr": 0.8,
+      "avg_cost": 21.099999999999994
+    },
+    "Rule router (Exp 4)": {
+      "recall@1": 0.7611111111111111,
+      "recall@3": 0.9111111111111111,
+      "recall@5": 0.9333333333333333,
+      "mrr": 0.8315740740740741,
+      "avg_cost": 4.642777777777778
+    },
+    "Learned category router (CV)": {
+      "recall@1": 0.7833333333333333,
+      "recall@3": 0.9166666666666666,
+      "recall@5": 0.9611111111111111,
+      "mrr": 0.8488888888888889,
+      "avg_cost": 6.9527777777777775
+    },
+    "Learned direct router (CV)": {
+      "recall@1": 0.7277777777777777,
+      "recall@3": 0.8722222222222222,
+      "recall@5": 0.9444444444444444,
+      "mrr": 0.8113888888888889,
+      "avg_cost": 2.2283333333333335
+    },
+    "Oracle (upper bound)": {
+      "recall@1": 0.8666666666666667,
+      "recall@3": 0.9388888888888889,
+      "recall@5": 0.9722222222222222,
+      "mrr": 0.9071296296296297,
+      "avg_cost": 3.3550000000000004
+    }
+  },
+  "category_classifier_cv_accuracy": 0.9388888888888889,
+  "direct_classifier_cv_accuracy": 0.7833333333333333,
+  "best_fixed_baseline": "Always hybrid",
+  "best_learned_router": "Learned category router (CV)",
+  "significance_vs_best_fixed": {
+    "bootstrap": {
+      "observed_diff": 0.022222222222222254,
+      "ci_95": [
+        -0.01666666666666672,
+        0.06666666666666665
+      ],
+      "p_one_sided": 0.1696
+    },
+    "mcnemar": {
+      "a_right_b_wrong": 9,
+      "a_wrong_b_right": 5,
+      "chi2": 0.6428571428571429,
+      "p_value": 0.4226780741706353
+    }
+  },
+  "significance_vs_rule_router": {
+    "bootstrap": {
+      "observed_diff": 0.022222222222222254,
+      "ci_95": [
+        -0.01666666666666672,
+        0.06666666666666665
+      ],
+      "p_one_sided": 0.1701
+    },
+    "mcnemar": {
+      "a_right_b_wrong": 9,
+      "a_wrong_b_right": 5,
+      "chi2": 0.6428571428571429,
+      "p_value": 0.4226780741706353
+    }
+  }
+}

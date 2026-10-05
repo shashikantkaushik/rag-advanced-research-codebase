@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{MRR@10 with bge-small embeddings}
+\label{tab:mrr_bge-small}
+\begin{tabular}{lcccccc}
+\toprule
+ & scifact & nfcorpus & arguana & fiqa & Avg & Latency (ms) \\
+\midrule
+Dense & 0.667 & 0.533 & \textbf{0.525} & 0.476 & 0.550 & 22.6 \\
+Hybrid & \textbf{0.693} & 0.573 & 0.512 & 0.442 & 0.555 & 23.9 \\
+Rerank & 0.656 & \textbf{0.579} & 0.414 & 0.445 & 0.523 & 120.8 \\
+\midrule
+Rule router & 0.660 & 0.578 & 0.512 & 0.455 & 0.552 & 72.8 \\
+Learned router & 0.691 & 0.564 & 0.522 & \textbf{0.477} & \textbf{0.564} & 44.3 \\
+Oracle & 0.766 & 0.647 & 0.650 & 0.571 & 0.658 & 38.4 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Recall@10 with mpnet-base embeddings}
+\label{tab:recall_mpnet-base}
+\begin{tabular}{lcccccc}
+\toprule
+ & scifact & nfcorpus & arguana & fiqa & Avg & Latency (ms) \\
+\midrule
+Dense & 0.777 & 0.165 & 0.765 & \textbf{0.571} & 0.570 & 27.4 \\
+Hybrid & \textbf{0.858} & 0.177 & \textbf{0.833} & 0.566 & \textbf{0.609} & 28.8 \\
+Rerank & 0.826 & \textbf{0.178} & 0.824 & 0.507 & 0.584 & 129.3 \\
+\midrule
+Rule router & 0.841 & 0.177 & 0.833 & 0.537 & 0.597 & 77.8 \\
+Learned router & 0.848 & 0.177 & 0.819 & 0.569 & 0.603 & 56.5 \\
+Oracle & 0.893 & 0.195 & 0.918 & 0.636 & 0.660 & 47.3 \\
+\bottomrule
+\end{tabular}
+\end{table}

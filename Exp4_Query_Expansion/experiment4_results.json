@@ -1,0 +1,60 @@
+{
+  "method_summary": {
+    "dense": {
+      "recall@1": 0.7222222222222222,
+      "recall@3": 0.8555555555555555,
+      "recall@5": 0.9277777777777778,
+      "mrr": 0.8012037037037038
+    },
+    "hybrid": {
+      "recall@1": 0.7611111111111111,
+      "recall@3": 0.9111111111111111,
+      "recall@5": 0.9333333333333333,
+      "mrr": 0.8306481481481482
+    },
+    "hybrid_rerank": {
+      "recall@1": 0.7166666666666667,
+      "recall@3": 0.8722222222222222,
+      "recall@5": 0.9222222222222223,
+      "mrr": 0.8
+    }
+  },
+  "oracle_summary": {
+    "recall@1": 0.8666666666666667,
+    "recall@3": 0.9388888888888889,
+    "recall@5": 0.9722222222222222,
+    "mrr": 0.9071296296296296
+  },
+  "router_summary": {
+    "recall@1": 0.7611111111111111,
+    "recall@3": 0.9111111111111111,
+    "recall@5": 0.9333333333333333,
+    "mrr": 0.8315740740740741,
+    "avg_cost": 4.642777777777778
+  },
+  "router_classification_accuracy": 0.48333333333333334,
+  "significance_router_vs_best_fixed": {
+    "baseline": "hybrid",
+    "bootstrap": {
+      "observed_diff": 0.0,
+      "ci_95": [
+        -0.016666666666666607,
+        0.016666666666666607
+      ],
+      "p_one_sided": 0.6461
+    },
+    "mcnemar": {
+      "a_right_b_wrong": 1,
+      "a_wrong_b_right": 1,
+      "chi2": 0.5,
+      "p_value": 0.47950012218695337
+    }
+  },
+  "ablation": {
+    "regex_signal_only": 0.7166666666666667,
+    "length_signal_only": 0.7611111111111111,
+    "both_combined (proposed)": 0.7611111111111111
+  },
+  "misclassification_count": 93,
+  "misclassification_rate": 0.5166666666666667
+}

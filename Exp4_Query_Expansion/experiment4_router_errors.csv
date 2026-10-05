@@ -1,0 +1,94 @@
+question,predicted_category,true_category,method_used,recall@1_hit
+"Nginx keeps hitting the worker_connections limit under heavy traffic, how do I raise it?",troubleshooting,keyword,hybrid,1
+"Bahut saare users ek saath aane par server naye connections accept karna band kar deta hai, isko handle karne ke liye kya badlu?",troubleshooting,semantic,hybrid,0
+"Getting intermittent 502 Bad Gateway errors, what's the first thing to check?",semantic,keyword,hybrid_rerank,1
+Site kabhi kabhi ek generic gateway error dikha raha hai jaise backend ne connection hi drop kar diya ho,troubleshooting,semantic,hybrid,1
+"Ek report jo generate hone mein bahut time leti hai, uske liye page load hi nahi hota aur error aata hai time khatam hone ka",troubleshooting,semantic,hybrid,0
+What's the command to reload nginx configuration without dropping connections?,semantic,keyword,hybrid_rerank,1
+"Config file update kiya hai, site down kiye bina naya config apply karne ka tareeka kya hai?",troubleshooting,semantic,hybrid,1
+How does 'nginx -t' validate configuration syntax before a reload?,semantic,keyword,hybrid_rerank,1
+Reload karne se pehle ye pata karna hai ki config file mein koi typo ya galti to nahi hai,troubleshooting,semantic,hybrid,1
+"Ek hi machine par kai websites hosted hain, request ko sahi site tak route karne ka logic kaise kaam karta hai?",troubleshooting,semantic,hybrid,0
+Which directive sets the listen port and IP for a server block?,semantic,keyword,hybrid_rerank,1
+"Server block ko kis IP aur port par sunna hai, wo kaise specify karte hain?",troubleshooting,semantic,hybrid,1
+"Client requests ko seedha backend application server tak forward karwana hai, Nginx ke through",troubleshooting,semantic,hybrid,1
+"What is Nginx's default upstream load balancing algorithm, round robin?",semantic,keyword,hybrid_rerank,1
+How does the least_conn load balancing method work in an upstream block?,semantic,keyword,hybrid_rerank,1
+"Requests ko us backend server ko dena hai jiska load abhi sabse kam hai, na ki bas turn-wise",troubleshooting,semantic,hybrid,1
+HTTPS enable karne ke liye Nginx ko certificate file aur uski private key kahan batani hoti hai?,troubleshooting,semantic,hybrid,1
+What typically causes an SSL handshake failure with expired certificates or cipher mismatches?,semantic,keyword,hybrid_rerank,1
+"Browser HTTPS site kholte waqt secure connection establish nahi kar pa raha, kuch security-related error de raha hai",troubleshooting,semantic,hybrid,0
+How do I force an HTTP to HTTPS redirect with a 301 in Nginx?,troubleshooting,keyword,hybrid,1
+Koi bhi HTTP wala link click kare to use automatically secure version par bhej dena hai,troubleshooting,semantic,hybrid,0
+"Website ki loading speed slow hai, especially text-heavy assets ke liye, bandwidth kam karna hai",troubleshooting,semantic,hybrid,1
+"Bade file uploads reject ho rahe hain, uski maximum allowed size kaha set hoti hai?",troubleshooting,semantic,hybrid,1
+What does a 413 Request Entity Too Large error mean in Nginx?,semantic,keyword,hybrid_rerank,1
+User ek document upload karne ki koshish kar raha hai aur server seedha reject kar deta hai bina backend tak pahunche,troubleshooting,semantic,hybrid,0
+How does the rewrite directive change a request URI using regular expressions?,semantic,keyword,hybrid_rerank,1
+Purane URLs ko naye format mein internally translate karna hai bina user ko redirect dikhaye,troubleshooting,semantic,hybrid,0
+How does Nginx decide precedence when multiple location blocks could match a URI?,semantic,keyword,hybrid_rerank,1
+"Ek request ke liye kai matching rules ho sakte hain jo sahi lagte hain, konsa actually use hoga ye kaise decide hota hai?",troubleshooting,semantic,hybrid,1
+What does the try_files directive do when serving static assets with a fallback?,semantic,keyword,hybrid_rerank,1
+"Static file exist kare to wahi serve karo, warna kisi aur file/index pe fallback ho jaye",troubleshooting,semantic,hybrid,0
+How does the error_page directive map HTTP status codes to a custom page?,semantic,keyword,hybrid_rerank,1
+500 ya 404 jaisi errors par default Nginx page ke bajaye apna branded page dikhana hai,troubleshooting,semantic,hybrid,0
+"Server requests ka record kahan store hota hai, aur crashes/warnings alag se kahan likhe jaate hain?",troubleshooting,semantic,hybrid,0
+How does log_format let you add custom fields like upstream response time?,semantic,keyword,hybrid_rerank,1
+"Log entries mein extra details add karni hain, jaise backend ne response dene mein kitna time liya",troubleshooting,semantic,hybrid,1
+"Ek IP se bahut zyada requests aa rahi hain thode time mein, unko slow down karna hai bina block kiye",troubleshooting,semantic,hybrid,1
+"Ek hi client se bahut saari connections khuli hui hain ek saath, unko limit karna hai",troubleshooting,semantic,hybrid,1
+"Worker processes ki sankhya CPU cores ke hisaab se automatically set karni hai, manually count nahi karna",troubleshooting,semantic,hybrid,1
+"Client connect to ho gaya hai lekin kuch der activity nahi hai, connection kab tak khula rahega?",troubleshooting,semantic,hybrid,0
+"Backend application ko client ka asli IP address pata chalna chahiye, na ki Nginx ka IP",troubleshooting,semantic,hybrid,0
+Ek backend server down ho jaye to Nginx traffic usse door kaise route karta hai automatically?,troubleshooting,semantic,hybrid,1
+"Backend par baar baar same request bhejne se bachna hai, response ko kuch der ke liye store karna hai",troubleshooting,semantic,hybrid,0
+Why doesn't open-source Nginx support built-in selective cache purging?,semantic,keyword,hybrid_rerank,1
+"Cache mein purana data reh gaya hai jo update ho chuka hai backend par, use manually clear karna hai",troubleshooting,semantic,hybrid,0
+What does the index directive do when a request maps to a directory?,semantic,keyword,hybrid_rerank,1
+"Jab URL ek folder ki taraf point kare, Nginx kaunsi file serve karega by default?",troubleshooting,semantic,hybrid,1
+What's the difference between the root and alias directives in a location block?,semantic,keyword,hybrid_rerank,1
+"File nahi mil raha 404 aa raha hai, lekin file disk par actually maujood hai — path config mein galti lag rahi hai",troubleshooting,semantic,hybrid,0
+What typically causes a 404 Not Found even though the file exists on disk?,troubleshooting,keyword,hybrid,1
+"Page load nahi ho rahi, 'not found' error aa raha hai, file toh server par hai",troubleshooting,semantic,hybrid,0
+"Page access karne par 'forbidden' type ka error mil raha hai, permission ka issue lag raha hai",troubleshooting,semantic,hybrid,1
+How does 'autoindex on;' generate a directory listing page?,semantic,keyword,hybrid_rerank,1
+"Kisi folder mein index file nahi hai, uske andar ki files ki list dikhani hai browser mein",troubleshooting,semantic,hybrid,1
+How do allow and deny directives restrict access by client IP or CIDR range?,troubleshooting,keyword,hybrid,1
+Kisi specific IP address ya range ko admin panel access karne se rokna hai,troubleshooting,semantic,hybrid,1
+How does the map directive create a variable based on another variable's value?,semantic,keyword,hybrid_rerank,1
+"User-Agent ya kisi header ke hisaab se conditionally different behavior chahiye, without full scripting",troubleshooting,semantic,hybrid,1
+"Config ke andar dynamically request ki details (URL, host, client address) reference karne ka tareeka kya hai?",troubleshooting,semantic,hybrid,1
+How does the include directive pull another config file into nginx.conf?,semantic,keyword,hybrid_rerank,1
+"Bahut saare server blocks ko alag alag files mein rakhna hai, phir unko main config mein jodna hai",troubleshooting,semantic,hybrid,1
+What is the sites-available and sites-enabled convention for on Debian/Ubuntu?,semantic,keyword,hybrid_rerank,1
+"Kaunsi sites currently active hain aur kaunsi sirf available hain, ye organize karne ka standard tareeka kya hai?",troubleshooting,semantic,hybrid,0
+Bahut saare simultaneous connections handle karne ke liye open-file limit badhani hai worker ke liye,troubleshooting,semantic,hybrid,0
+How do I enable HTTP/2 with the http2 directive on a listen line?,semantic,keyword,hybrid_rerank,1
+"Bahut saare assets load karte time latency kam karni hai, ek hi connection par multiplex karke",troubleshooting,semantic,hybrid,0
+Server ke active connections aur total requests ka real-time count kahin dikhana hai monitoring ke liye,troubleshooting,semantic,hybrid,1
+What's the difference between a full Nginx restart and 'nginx -s reload'?,semantic,keyword,hybrid_rerank,1
+"Config change apply karne ke do tareeke hain, ek mein connections drop hoti hain, dusre mein nahi — farak kya hai?",troubleshooting,semantic,hybrid,0
+"How is an nginx.conf file structured into main, events, and http contexts?",semantic,keyword,hybrid_rerank,1
+"Config file ke andar overall structure kaisi hoti hai, kaunse major sections/blocks hote hain?",troubleshooting,semantic,hybrid,0
+"Agar Host header kisi bhi defined server_name se match na kare, to request kis server block ko jayegi?",troubleshooting,semantic,hybrid,0
+How does the keepalive setting in an upstream block reduce connection overhead?,semantic,keyword,hybrid_rerank,1
+"Backend ke saath baar baar naya TCP connection banana padta hai, isse bachne ka tareeka kya hai?",troubleshooting,semantic,hybrid,1
+"Response ko client ko bhejne se pehle Nginx use pura buffer karta hai ya nahi, isse streaming par asar padta hai",troubleshooting,semantic,hybrid,1
+How does the sendfile directive improve performance for large static files?,semantic,keyword,hybrid_rerank,1
+"Bade static files serve karte time performance behtar karni hai, disk se directly network tak",troubleshooting,semantic,hybrid,1
+How does the Strict-Transport-Security (HSTS) header prevent protocol downgrade?,semantic,keyword,hybrid_rerank,1
+"Browser ko hamesha secure connection hi use karne ke liye force karna hai, kabhi bhi insecure version pe na jaye",troubleshooting,semantic,hybrid,1
+How do I combine error_page with a location block to serve a branded error page?,troubleshooting,keyword,hybrid,1
+500 ya 502 error aane par apna khud ka design kiya hua HTML page dikhana hai instead of default text,troubleshooting,semantic,hybrid,1
+What's a minimal Nginx config for serving a purely static site?,semantic,keyword,hybrid_rerank,1
+"What headers, via proxy_http_version 1.1 and Upgrade/Connection, are needed for WebSocket proxying?",semantic,keyword,hybrid_rerank,1
+"Real-time chat feature use kar raha hai persistent connection, use Nginx ke peeche proxy karna hai",troubleshooting,semantic,hybrid,0
+Deploy ke time worker process ko kitni der pending requests finish karne ke liye milta hai before force stop?,troubleshooting,semantic,hybrid,1
+"Since Nginx doesn't rotate logs itself, how is log rotation typically handled via logrotate?",troubleshooting,keyword,hybrid,1
+"Access aur error log files bahut bade ho rahe hain disk par, unko manage karne ka standard tareeka kya hai?",troubleshooting,semantic,hybrid,1
+"Why doesn't Nginx pass shell environment variables to workers by default, and what does the env directive do?",troubleshooting,keyword,hybrid,1
+"Ek script/module ko ek API key chahiye jo environment variable mein set hai, lekin nginx worker use dekh hi nahi pa raha",troubleshooting,semantic,hybrid,1
+How do I make one server block respond to multiple domain names via server_name?,troubleshooting,keyword,hybrid,1
+"Kai alag alag domains hain jinko exactly same content dikhana hai, alag alag server blocks banaye bina",troubleshooting,semantic,hybrid,1
+How does setting error_log to 'debug' level help trace exactly how a request is processed?,troubleshooting,keyword,hybrid,1
+"Ek specific request kaise process ho raha hai step by step, use bahut detail mein dekhna hai troubleshooting ke liye",troubleshooting,semantic,hybrid,0
